@@ -83,17 +83,17 @@
 		</div>
 
 		<div class="tab notes flexcol" data-group="primary" data-tab="notes">
-			<section class="flexrow">
-				<div class="item-name">Anotações</div>
-				<aside class="sidebar">
-					{{editor descriptionHTML target="system.descricao" button=true editable=editable
+			<section class="grid-2col">
+				<div class="notes-section">
+					<h3 class="item-name">Anotações</h3>
+					{{editor content=system.descricao target="system.descricao" button=true editable=editable
 							engine="prosemirror" collaborate=false}}
-				</aside>
-				<div class="item-name">Historia</div>
-				<section>
-					{{editor descriptionHTML target="system.historia" button=true editable=editable
+				</div>
+				<div class="notes-section">
+					<h3 class="item-name">História</h3>
+					{{editor content=system.historia target="system.historia" button=true editable=editable
 							engine="prosemirror" collaborate=false}}
-				</section>
+				</div>
 			</section>
 		</div>
 
